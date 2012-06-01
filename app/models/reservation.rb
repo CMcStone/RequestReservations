@@ -3,4 +3,6 @@ class Reservation < ActiveRecord::Base
   
   belongs_to :status 
   
+  validates :user_id, :description, :requested, :expiration, :status_id, :presence => true
+  
 end

@@ -7,6 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<h1>Request Reservation</h1>
+<ul>
+  <li><%= link_to "Requests", reservations_path %></li>
+  <li><%= link_to "New", new_reservation_path %></li>
+</ul>
 
 <%= yield %>
 
